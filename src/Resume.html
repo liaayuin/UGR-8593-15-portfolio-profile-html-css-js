@@ -7,21 +7,21 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
     />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="../src/css/style.css" />
     <title>CV - Lensa Yadesa Portfolio</title>
   </head>
   <body>
     <header id="header" class="header">
-      <nav class="nav-container">
+      <nav class="nav-container" onclick="toggleMenu()">
         <div class="logo">
-          <a href="home.html">Lensa Yadesa</a>
+          <a href="../index.html">Lensa Yadesa</a>
         </div>
         <div class="links">
-          <a href="home.html">Home</a>
-          <a href="about.html">About Me</a>
-          <a href="skills.html">Skills</a>
-          <a href="Resume.html">Resume</a>
-          <a href="contact.html">Contact</a>
+          <a href="../index.html">Home</a>
+          <a href="../src/about.html">About Me</a>
+          <a href="../src/skills.html">Skills</a>
+          <a href="../src/Resume.html" class="active">Resume</a>
+          <a href="../src/contact.html">Contact</a>
         </div>
       </nav>
     </header>
@@ -41,7 +41,7 @@
       <section class="download-cv">
         <h3>Click below to download my CV</h3>
         <a
-          href="file/Lensa_Yadesa_Oljira_professional_resume.pdf"
+          href="../src/file/Lensa_Yadesa_Oljira_professional_resume.pdf"
           class="cv-link"
           download
         >
@@ -61,7 +61,7 @@
                 and makes task management easy.
               </p>
             </figcaption>
-            <img src="images/Todolist.png" alt="To-Do List App" />
+            <img src="../src/images/Todolist.png" alt="To-Do List App" />
           </figure>
         </div>
 
@@ -76,7 +76,7 @@
               </p>
             </figcaption>
             <img
-              src="images/expense-tracker-personal.jpg"
+              src="../src/images/expense-tracker-personal.jpg"
               alt="Expense Tracker App"
             />
           </figure>
@@ -116,6 +116,6 @@
       </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="../src/Javascript/script.js"></script>
   </body>
 </html>

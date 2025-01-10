@@ -7,21 +7,21 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
     />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="../src/css/style.css" />
     <title>About - Lensa Yadesa Portfolio</title>
   </head>
   <body>
     <header id="header" class="header">
-      <nav class="nav-container">
+      <nav class="nav-container" onclick="toggleMenu()">
         <div class="logo">
-          <a href="home.html">Lensa Yadesa</a>
+          <a href="../index.html">Lensa Yadesa</a>
         </div>
         <div class="links">
-          <a href="home.html">Home</a>
-          <a href="about.html">About Me</a>
-          <a href="skills.html">Skills</a>
-          <a href="Resume.html">Resume</a>
-          <a href="contact.html">Contact</a>
+          <a href="../index.html">Home</a>
+          <a href="../src/about.html" class="active">About Me</a>
+          <a href="../src/skills.html">Skills</a>
+          <a href="../src/Resume.html">Resume</a>
+          <a href="../src/contact.html">Contact</a>
         </div>
       </nav>
     </header>
@@ -68,7 +68,7 @@
             <h4>Admiring Our Culture</h4>
             <p>Exploring and celebrating the rich culture around us!</p>
             <img
-              src="images/Ethiopia_culture.jpg"
+              src="../src/images/Ethiopia_culture.jpg"
               alt="Admiring Culture"
               class="media-img"
             />
@@ -82,17 +82,17 @@
             </p>
             <div class="arsenal-gallery">
               <img
-                src="images/Arsenal-match.jpg"
+                src="../src/images/Arsenal-match.jpg"
                 alt="Arsenal Match"
                 class="media-img"
               />
               <img
-                src="images/Arsenal-fan.jpg"
+                src="../src/images/Arsenal-fan.jpg"
                 alt="Arsenal Fans"
                 class="media-img"
               />
               <img
-                src="images/Arsenal-stadium.jpg"
+                src="../src/images/Arsenal-stadium.jpg"
                 alt="Arsenal Stadium"
                 class="media-img"
               />
@@ -102,14 +102,20 @@
               <div class="media-item">
                 <h5>Arsenal in Action</h5>
                 <video width="320" height="240" controls>
-                  <source src="video/Arsenal-video.mp4" type="video/mp4" />
+                  <source
+                    src="../src/video/Arsenal-video.mp4"
+                    type="video/mp4"
+                  />
                   Your browser does not support the video tag.
                 </video>
               </div>
               <div class="media-item">
                 <h5>Arsenal Theme Song</h5>
                 <audio controls>
-                  <source src="audio/Arsenal_forever-1.m4a" type="audio/mp3" />
+                  <source
+                    src="../src/audio/Arsenal_forever-1.m4a"
+                    type="audio/mp3"
+                  />
                   Your browser does not support the audio element.
                 </audio>
               </div>
@@ -149,5 +155,6 @@
         <p>&copy; 2024 Lensa Yadesa. All rights reserved.</p>
       </div>
     </footer>
+    <script src="../src/Javascript/script.js"></script>
   </body>
 </html>

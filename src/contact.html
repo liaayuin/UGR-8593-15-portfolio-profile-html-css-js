@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="../src/css/style.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
@@ -12,16 +12,16 @@
   </head>
   <body>
     <header id="header" class="header">
-      <nav class="nav-container">
+      <nav class="nav-container" onclick="toggleMenu()">
         <div class="logo">
-          <a href="home.html">Lensa Yadesa</a>
+          <a href="../index.html">Lensa Yadesa</a>
         </div>
         <div class="links">
-          <a href="home.html">Home</a>
-          <a href="about.html">About Me</a>
-          <a href="skills.html">Skills</a>
-          <a href="Resume.html">Resume</a>
-          <a href="contact.html">Contact</a>
+          <a href="../index.html">Home</a>
+          <a href="../src/about.html">About Me</a>
+          <a href="../src/skills.html">Skills</a>
+          <a href="../src/Resume.html">Resume</a>
+          <a href="../src/contact.html" class="active">Contact</a>
         </div>
       </nav>
     </header>
@@ -30,45 +30,50 @@
       <section id="contact" class="contact-section">
         <h2>Contact Me</h2>
         <form
-          id="contact-form"
-          onsubmit="alert('Your message has been sent!'); return false;"
+          action="https://formsubmit.co/6244842661c6609563650e4d8e0336d8"
+          method="POST"
         >
-          <div class="form-group">
-            <label for="name">Name:</label>
-            <input
-              type="text"
-              id="name"
-              name="name"
-              class="form-input"
-              required
-              placeholder="Enter your name"
-            />
-          </div>
+          <div
+            id="contact-form"
+            onsubmit="alert('Your message has been sent!'); return false;"
+          >
+            <div class="form-group">
+              <label for="name">Name:</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                class="form-input"
+                required
+                placeholder="Enter your name"
+              />
+            </div>
 
-          <div class="form-group">
-            <label for="email">Email:</label>
-            <input
-              type="email"
-              id="email"
-              name="email"
-              class="form-input"
-              required
-              placeholder="Enter your email"
-            />
-          </div>
+            <div class="form-group">
+              <label for="email">Email:</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                class="form-input"
+                required
+                placeholder="Enter your email"
+              />
+            </div>
 
-          <div class="form-group">
-            <label for="message">Message:</label>
-            <textarea
-              id="message"
-              name="message"
-              class="form-textarea"
-              required
-              placeholder="Enter your message"
-            ></textarea>
-          </div>
+            <div class="form-group">
+              <label for="message">Message:</label>
+              <textarea
+                id="message"
+                name="message"
+                class="form-textarea"
+                required
+                placeholder="Enter your message"
+              ></textarea>
+            </div>
 
-          <button type="submit" class="btn">Send Message</button>
+            <button type="submit" class="btn">Send Message</button>
+          </div>
         </form>
       </section>
     </main>
@@ -103,5 +108,6 @@
         <p>&copy; 2024 Lensa Yadesa. All rights reserved.</p>
       </div>
     </footer>
+    <script src="../src/Javascript/script.js"></script>
   </body>
 </html>

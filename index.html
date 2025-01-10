@@ -7,21 +7,21 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
     />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="./src/css/style.css" />
     <title>Home - Lensa Yadesa Portfolio</title>
   </head>
   <body>
     <header id="header" class="header">
-      <nav class="nav-container">
+      <nav class="nav-container" onclick="toggleMenu()">
         <div class="logo">
-          <a href="home.html">Lensa Yadesa</a>
+          <a href="./index.html">Lensa Yadesa</a>
         </div>
         <div class="links">
-          <a href="home.html">Home</a>
-          <a href="about.html">About Me</a>
-          <a href="skills.html">Skills</a>
-          <a href="Resume.html.html">Resume</a>
-          <a href="contact.html">Contact</a>
+          <a href="./index.html" class="active">Home</a>
+          <a href="./src/about.html">About Me</a>
+          <a href="./src/skills.html">Skills</a>
+          <a href="./src/Resume.html">Resume</a>
+          <a href="./src/contact.html">Contact</a>
         </div>
       </nav>
     </header>
@@ -31,7 +31,7 @@
         <div class="main-container">
           <div class="image" data-aos="zoom-out" data-aos-duration="3000">
             <img
-              src="images/lensa-yadesa.jpg"
+              src="./src/images/lensa-yadesa.jpg"
               alt="Lensa Yadesa"
               width="400"
               height="300"
@@ -93,5 +93,6 @@
         <p>&copy; 2024 Lensa Yadesa. All rights reserved.</p>
       </div>
     </footer>
+    <script src="./src/Javascript/script.js"></script>
   </body>
 </html>
